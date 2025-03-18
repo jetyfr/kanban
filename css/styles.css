@@ -320,27 +320,52 @@ main {
     word-wrap: break-word;
 }
 
+/* Card actions */
 .card-actions {
     display: flex;
     justify-content: flex-end;
     gap: 0.5rem;
-    padding-top: 0.75rem;
+    padding-top: 0.5rem;
     border-top: 1px dashed rgba(0, 0, 0, 0.1);
     opacity: 0.6;
 }
 
 .card-actions button {
-    padding: 0.4rem;
-    font-size: 0.85rem;
+    padding: 0.25rem;
+    font-size: 0.8rem;
     background: transparent;
     border: none;
     color: var(--text-color);
     cursor: pointer;
     transition: opacity 0.2s ease;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-actions button:hover {
     opacity: 1;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+/* Make cards more compact */
+.card {
+    padding: 0.8rem;
+    margin-bottom: 0;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.card-description {
+    margin-bottom: 0.5rem;
+    max-height: 80px;
+    overflow-y: auto;
 }
 
 .add-card {
